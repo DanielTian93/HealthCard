@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthcardSdk</name>
+    </assembly>
+    <members>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.id">
+            <summary>
+            身份证号	
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.gender">
+            <summary>
+            性别 男、女
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.nation">
+            <summary>
+            民族
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.birth">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.authority">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.CardInfo.validDate">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.GetOrderIdByOutAppIdReq.appId">
+            <summary>
+            健康卡appid
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.GetOrderIdByOutAppIdReq.qrCodeText">
+            <summary>
+            健康卡二维码
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.wechatCode">
+            <summary>
+            微信身份码
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.gender">
+            <summary>
+            性别 男、女
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.nation">
+            <summary>
+            民族 	汉族、满族等
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.birthday">
+            <summary>
+            出生年月日 格式：yyyy-MM-dd
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.phone1">
+            <summary>
+            联系方式1
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.phone2">
+            <summary>
+            联系方式2
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.patid">
+            <summary>
+            院内ID
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.idNumber">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.idType">
+            <summary>
+            证件类型 01-居民身份证，其他参考证件类型表，核身失败的用户不会显示在开放平台官网上面。
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.openId">
+            <summary>
+            用户openId
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.RegisterHealthCardReq.registeredType">
+            <summary>
+            0单个注册 1 批量注册
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.qrCodeText">
+            <summary>
+            二维码
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.idCardNumber">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.time">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.hospitalId">
+            <summary>
+            医院ID 文档无此参数 调用时默认设置
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.scene">
+            <summary>
+            用卡环节
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.cardType">
+            <summary>
+            用卡科室
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.cardChannel">
+            <summary>
+            证件类型
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.department">
+            <summary>
+            用卡渠道
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.cardCostTypes">
+            <summary>
+            用卡费别
+            </summary>
+        </member>
+        <member name="P:com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq.hospitalCode">
+            <summary>
+            医院ID 调用时默认设置
+            </summary>
+        </member>
+    </members>
+</doc>

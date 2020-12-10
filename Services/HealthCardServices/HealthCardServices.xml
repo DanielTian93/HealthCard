@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthCardServices</name>
+    </assembly>
+    <members>
+        <member name="P:HealthCardServices.DomainModel.RegisterHealthCardRequestDomainModel.CardNo">
+            <summary>
+            首次绑定微信服务号 选填
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.RegisterHealthCardRequestDomainModel.Code">
+            <summary>
+            微信Code
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.IDCardOCRRequestDomainModel.ImageContent">
+            <summary>
+            身份证Base64
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.MedName">
+            <summary>
+            患者姓名
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.MedCardid">
+            <summary>
+            身份证号
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.MedAddress">
+            <summary>
+            身份证地址
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.MedLinkMobile">
+            <summary>
+            关系人手机
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.CardNo">
+            <summary>
+            病历号
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.IsChild">
+            <summary>
+            是否小孩
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.Birthday">
+            <summary>
+            小孩生日
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.MedBindInputViewModel.ParentName">
+            <summary>
+            监护人姓名
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel.Code">
+            <summary>
+            微信OpenId
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel.IdNumber">
+            <summary>
+            身份证
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel.OpenId">
+            <summary>
+            微信OpenId
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.MemId">
+            <summary>
+            服务号用户Id
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.Scene">
+            <summary>
+            用卡环节
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.CardType">
+            <summary>
+            用卡科室
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.Department">
+            <summary>
+            用卡渠道
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.CardCostTypes">
+            <summary>
+            用卡费别
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.ReportHISDataReuestDomainModel.From">
+            <summary>
+            来源
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.GetHealthCardByHealthCodeRequestDomainModel.HealthCode">
+            <summary>
+            跨院授权获取的Healthcode
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.GetHealthCardByHealthCodeRequestDomainModel.Code">
+            <summary>
+            如果有Openid则不填
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.GetHealthCardByHealthCodeRequestDomainModel.OpenId">
+            <summary>
+            微信Openid
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.AllCardQueryRequestDomainModel.OpenId">
+            <summary>
+            OpenId
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.AllCardQueryResponseDomainModel.RegisterHealthCardInfo">
+            <summary>
+            健康卡信息
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel.WechatCode">
+            <summary>
+            微信身份码
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel.OpenId">
+            <summary>
+            用户openId
+            </summary>
+        </member>
+        <member name="P:HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel.Memid">
+            <summary>
+            微信公众号程序内用户id
+            </summary>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.IDCardOCR(System.String)">
+            <summary>
+            身份证OCR
+            </summary>
+            <param name="imageContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.RegisterHealthCardAsync(HealthCardServices.DomainModel.RegisterHealthCardRequestDomainModel)">
+            <summary>
+            注册健康卡
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.RegisterFollowUpAsync(HealthCardServices.DomainModel.MedBindInputViewModel)">
+            <summary>
+            向FollowUp注册用户信息
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.GetMemberList(System.String)">
+            <summary>
+            根据OpenId获取用户成员
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.GetMemberInfo(System.Int32)">
+            <summary>
+            获取meminfo根据MmeId
+            </summary>
+            <param name="memid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.UnBindling(System.Int32)">
+            <summary>
+            解绑
+            </summary>
+            <param name="memid"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.UnBindlingHealthCard(System.Int32,System.String)">
+            <summary>
+            解绑
+            </summary>
+            <param name="memid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.AllCardQuery(HealthCardServices.DomainModel.AllCardQueryRequestDomainModel)">
+            <summary>
+            查询 就诊卡 以及 健康卡信息（如果没有健康卡 健康卡信息为空）
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.HealthCardQuery(HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel)">
+            <summary>
+            查询已注册健康卡数据列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.RegisterBatchHealthCardAsync">
+            <summary>
+            批量注册健康卡 老用户升级 无效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.ReportHISData(com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq)">
+            <summary>
+            用卡数据监测接口
+            </summary>
+            <param name="reportHISDataReq"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.ReportHisDataMem(HealthCardServices.DomainModel.ReportHISDataReuestDomainModel)">
+            <summary>
+            用卡数据监测接口 提供MemId
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.GetHealthCardByHealthCode(com.tencent.healthcard.HealthCardOpenAPI.GetHealthCardByHealthCodeReq)">
+            <summary>
+            通过健康卡授权码获取健康卡接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.OldCardRegisterHealthCard(HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel)">
+            <summary>
+            老卡升级健康卡
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.RegisterHealthCardInfoInsert(Core.Models.DBModels.RegisterHealthCardInfo)">
+            <summary>
+            存储关系
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.HealthCardService.GetOrderIdByOutAppId(com.tencent.healthcard.HealthCardOpenAPI.GetOrderIdByOutAppIdReq)">
+            <summary>
+            获取卡包订单ID接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.IDCardOCR(System.String)">
+            <summary>
+            身份证OCR
+            </summary>
+            <param name="imageContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.RegisterHealthCardAsync(HealthCardServices.DomainModel.RegisterHealthCardRequestDomainModel)">
+            <summary>
+            注册健康卡
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.RegisterBatchHealthCardAsync">
+            <summary>
+            批量注册健康卡 老用户升级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.HealthCardQuery(HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel)">
+            <summary>
+            查询已注册健康卡数据列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.ReportHISData(com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq)">
+            <summary>
+            用卡数据监测接口
+            </summary>
+            <param name="reportHISDataReq"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.ReportHisDataMem(HealthCardServices.DomainModel.ReportHISDataReuestDomainModel)">
+            <summary>
+            用卡数据监测接口 提供MemId
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.GetHealthCardByHealthCode(com.tencent.healthcard.HealthCardOpenAPI.GetHealthCardByHealthCodeReq)">
+            <summary>
+            通过健康卡授权码获取健康卡接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.RegisterFollowUpAsync(HealthCardServices.DomainModel.MedBindInputViewModel)">
+            <summary>
+            向FollowUp注册用户信息
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.AllCardQuery(HealthCardServices.DomainModel.AllCardQueryRequestDomainModel)">
+            <summary>
+            查询 就诊卡 以及 健康卡信息（如果没有健康卡 健康卡信息为空）
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.OldCardRegisterHealthCard(HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel)">
+            <summary>
+            老卡升级健康卡
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.GetOrderIdByOutAppId(com.tencent.healthcard.HealthCardOpenAPI.GetOrderIdByOutAppIdReq)">
+            <summary>
+            获取卡包订单ID接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.UnBindlingHealthCard(System.Int32,System.String)">
+            <summary>
+            解绑
+            </summary>
+            <param name="memid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HYSoft.Wechat.HealthCardServices.Services.IHealthCardService.RegisterHealthCardInfoInsert(Core.Models.DBModels.RegisterHealthCardInfo)">
+            <summary>
+            存储关系
+            </summary>
+            <param name="req"></param>
+        </member>
+    </members>
+</doc>
