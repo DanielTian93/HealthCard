@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthCardApi</name>
+    </assembly>
+    <members>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.GetOpenAccessToken(System.String)">
+            <summary>
+            通过微信Code获取Openid
+            </summary>
+            <param name="code">微信Code</param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.IDCardOCR(HealthCardServices.DomainModel.IDCardOCRRequestDomainModel)">
+            <summary>
+            身份证OCR
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.RegisterHealthCardAsync(HealthCardServices.DomainModel.RegisterHealthCardRequestDomainModel)">
+            <summary>
+            注册健康卡
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.RegisterBatchHealthCard">
+            <summary>
+            批量注册健康卡 老用户升级 未开放权限不可使用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.OldCardRegisterHealthCard(HealthCardServices.DomainModel.OldCardRegisterHealthCardRequestDomainModel)">
+            <summary>
+            就诊卡升级健康卡
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.HealthCardQuery(HealthCardServices.DomainModel.HealthCardQueryRequestDomainModel)">
+            <summary>
+            查询已注册健康卡数据列表(此接口只查询了OpenId对应的健康卡 无就诊卡)
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.AllCardQuery(HealthCardServices.DomainModel.AllCardQueryRequestDomainModel)">
+            <summary>
+            查询 就诊卡 以及 健康卡信息（如果没有健康卡 健康卡信息为空）
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.ReportHISDataMem(HealthCardServices.DomainModel.ReportHISDataReuestDomainModel)">
+            <summary>
+            用卡数据监测接口 提供MEMID获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.ReportHisData(com.tencent.healthcard.HealthCardOpenAPI.ReportHISDataReq)">
+            <summary>
+            用卡数据监测接口 提供所需所有数据
+            </summary>
+            <param name="req"></param>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.GetHealthCardByHealthCodeAsync(HealthCardServices.DomainModel.GetHealthCardByHealthCodeRequestDomainModel)">
+            <summary>
+            通过健康卡授权码获取健康卡接口(后台完成建档绑定)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.GetOrderIdByOutAppId(com.tencent.healthcard.HealthCardOpenAPI.GetOrderIdByOutAppIdReq)">
+            <summary>
+            获取卡包订单ID接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthCardApi.Controllers.HealthCardController.UnBindlingHealthCard(System.Int32,System.String)">
+            <summary>
+            解绑
+            </summary>
+            <param name="memid">用户id</param>
+            <param name="openId">微信openid</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
