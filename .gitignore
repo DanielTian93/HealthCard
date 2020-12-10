@@ -3,3 +3,7 @@
 ################################################################################
 
 /APIs/HealthCardApi
+/Core
+/HealthcardSdk
+/Services/HealthCardServices
+/Src/HealthCardTemplate
